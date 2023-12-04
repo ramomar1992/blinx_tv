@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>open me</title>
 </head>
+
 <body>
   <h1>Hi</h1>
-  <script src="/app.js"></script>
+  <script>
+    let element = document.createElement("h2")
+    element.innerText = window.navigator.userAgent
+    let body = document.querySelector('body')
+    body.append(element)
+  </script>
 </body>
+
 </html>
